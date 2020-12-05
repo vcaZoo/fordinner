@@ -14,11 +14,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>What's for Dinner?</title>
 
 </head>
 
-<body class="bg-warning" style="background-image: url(img/food.png);" >
+<body class="bg-warning">
 
     <div class="container-fluid" id="all">
         <div class="row">
@@ -45,7 +46,7 @@
                             <li class="nav-item"><a href="#" class="nav-link"><img class="navicon"
                                         src="img/history.svg"></a>
                             </li>
-                            <li class="nav-item mt-auto"><a href="#" class="nav-link"><img class="navicon"
+                            <li class="nav-item mt-auto"><a href="index.html" class="nav-link"><img class="navicon"
                                         src="img/home.svg"></a>
                             </li>
                         </ul>
@@ -94,14 +95,21 @@
 
             <!--LOGIN MODAL ENDS HERE-->
 
-            <main class="col my-5 pt-5 my-sm-auto">
+            <main class="col my-auto">
                 <div class="row">
                     <div class="col-1 d-none d-sm-block d-lg-none"></div>
-                    <div class="col">
-                        <h1 class="">What's for </br>Dinner?</h1>
-                        <a class="btn btn-start" href="start.html" role="button">get started</a>
-                        <p id="demo"></p>
+                    <div class="col my-auto" id="mform">
+                        <form class="form-inline align-self-center">
+                            <div class="text-black formtxt">What's for Dinner <select class="dropdwn form-control">
+                                    <option selected>--pick one--</option>
+                                    <option>today</option>
+                                    <option>this week</option>
+                                </select>&nbsp;?
+                            </div>
+                        </form>
                     </div>
+                    </div>
+
                 </div>
             </main>
 
