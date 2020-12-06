@@ -2,7 +2,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: calc(100% + 90px) calc(100% + 50px);;
-    background-size: clamp( 65vh, 60vw, 80vh);
+    background-size: clamp( 60vh, 75vw, 80vh);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ a {
 
 h1 {
     font-weight: 800;
-    font-size: clamp(3.5rem, 6vw, 6vw);
+    font-size: clamp(3.5rem, 8vw, 8vw);
     color: black;
    
 }
@@ -78,8 +78,13 @@ h2 {
  .modal-content {
       background-color: rgba(255, 232, 163, 1);
       border: none;
+      border-radius: 12px;
       height: 50%;
   }
+
+  .modal-backdrop {
+    background-color: #DE9400;
+}
 
 .loginform {
     background-color: rgba(239, 173, 7, .5);
@@ -88,6 +93,15 @@ h2 {
     color:#DE9400;
     height: 50px;
     border-radius: 12px;
+}
+
+.loginform:focus {
+    color: #da8300;
+    background-color: rgba(239, 173, 7, .5)
+}
+
+.loginform::placeholder {
+    color: #da8300;
 }
 
 .btn { 
@@ -133,11 +147,38 @@ h2 {
 
 .formtxt {
     font-weight: 800;
-    font-size: clamp(3.5rem, 4vw, 4vw);
+    font-size: clamp(3.5rem, 5vw, 6vw);
     color: black;
 }
 
+select.form-control {
+    color: #DE9400;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: #fff7e0;
+    border-radius: 12px;
+}
+
+.selecttxt {
+    color: black;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: #fff7e0;
+    border-radius: 12px;
+}
+
 .dropdwn {
+    background-color: #fff7e0;
+    border: solid 2px #fff7e0;
+    width: auto;
+    height: 5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #DE9400;
+    border-radius: 12px;
+}
+
+.dropdwn:focus {
     background-color: #fff7e0;
     border: solid 2px #fff7e0;
     width: auto;
